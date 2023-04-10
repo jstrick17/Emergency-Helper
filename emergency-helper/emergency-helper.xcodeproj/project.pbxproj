@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA8E269629E4D33800169AE8 /* emergency-helper Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA8E269529E4D33800169AE8 /* emergency-helper Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA8E269B29E4D33800169AE8 /* emergency_helperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E269A29E4D33800169AE8 /* emergency_helperApp.swift */; };
+		DA8E269D29E4D33800169AE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E269C29E4D33800169AE8 /* ContentView.swift */; };
+		DA8E269F29E4D33A00169AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8E269E29E4D33A00169AE8 /* Assets.xcassets */; };
+		DA8E26A229E4D33A00169AE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8E26A129E4D33A00169AE8 /* Preview Assets.xcassets */; };
+		DA8E26AC29E4D33A00169AE8 /* emergency_helper_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E26AB29E4D33A00169AE8 /* emergency_helper_Watch_AppTests.swift */; };
+		DA8E26B629E4D33A00169AE8 /* emergency_helper_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E26B529E4D33A00169AE8 /* emergency_helper_Watch_AppUITests.swift */; };
+		DA8E26B829E4D33A00169AE8 /* emergency_helper_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E26B729E4D33A00169AE8 /* emergency_helper_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA8E269729E4D33800169AE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA8E268929E4D33800169AE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA8E269429E4D33800169AE8;
+			remoteInfo = "emergency-helper Watch App";
+		};
+		DA8E26A829E4D33A00169AE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA8E268929E4D33800169AE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA8E269429E4D33800169AE8;
+			remoteInfo = "emergency-helper Watch App";
+		};
+		DA8E26B229E4D33A00169AE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA8E268929E4D33800169AE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA8E269429E4D33800169AE8;
+			remoteInfo = "emergency-helper Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA8E26BE29E4D33A00169AE8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DA8E269629E4D33800169AE8 /* emergency-helper Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DA8E268F29E4D33800169AE8 /* emergency-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "emergency-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8E269529E4D33800169AE8 /* emergency-helper Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "emergency-helper Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8E269A29E4D33800169AE8 /* emergency_helperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emergency_helperApp.swift; sourceTree = "<group>"; };
+		DA8E269C29E4D33800169AE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA8E269E29E4D33A00169AE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA8E26A129E4D33A00169AE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA8E26A729E4D33A00169AE8 /* emergency-helper Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "emergency-helper Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8E26AB29E4D33A00169AE8 /* emergency_helper_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emergency_helper_Watch_AppTests.swift; sourceTree = "<group>"; };
+		DA8E26B129E4D33A00169AE8 /* emergency-helper Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "emergency-helper Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8E26B529E4D33A00169AE8 /* emergency_helper_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emergency_helper_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		DA8E26B729E4D33A00169AE8 /* emergency_helper_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emergency_helper_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA8E269229E4D33800169AE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8E26A429E4D33A00169AE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8E26AE29E4D33A00169AE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA8E268829E4D33800169AE8 = {
+			isa = PBXGroup;
+			children = (
+				DA8E269929E4D33800169AE8 /* emergency-helper Watch App */,
+				DA8E26AA29E4D33A00169AE8 /* emergency-helper Watch AppTests */,
+				DA8E26B429E4D33A00169AE8 /* emergency-helper Watch AppUITests */,
+				DA8E269029E4D33800169AE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA8E269029E4D33800169AE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E268F29E4D33800169AE8 /* emergency-helper.app */,
+				DA8E269529E4D33800169AE8 /* emergency-helper Watch App.app */,
+				DA8E26A729E4D33A00169AE8 /* emergency-helper Watch AppTests.xctest */,
+				DA8E26B129E4D33A00169AE8 /* emergency-helper Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA8E269929E4D33800169AE8 /* emergency-helper Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E269A29E4D33800169AE8 /* emergency_helperApp.swift */,
+				DA8E269C29E4D33800169AE8 /* ContentView.swift */,
+				DA8E269E29E4D33A00169AE8 /* Assets.xcassets */,
+				DA8E26A029E4D33A00169AE8 /* Preview Content */,
+			);
+			path = "emergency-helper Watch App";
+			sourceTree = "<group>";
+		};
+		DA8E26A029E4D33A00169AE8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E26A129E4D33A00169AE8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA8E26AA29E4D33A00169AE8 /* emergency-helper Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E26AB29E4D33A00169AE8 /* emergency_helper_Watch_AppTests.swift */,
+			);
+			path = "emergency-helper Watch AppTests";
+			sourceTree = "<group>";
+		};
+		DA8E26B429E4D33A00169AE8 /* emergency-helper Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E26B529E4D33A00169AE8 /* emergency_helper_Watch_AppUITests.swift */,
+				DA8E26B729E4D33A00169AE8 /* emergency_helper_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "emergency-helper Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA8E268E29E4D33800169AE8 /* emergency-helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA8E26BF29E4D33A00169AE8 /* Build configuration list for PBXNativeTarget "emergency-helper" */;
+			buildPhases = (
+				DA8E268D29E4D33800169AE8 /* Resources */,
+				DA8E26BE29E4D33A00169AE8 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA8E269829E4D33800169AE8 /* PBXTargetDependency */,
+			);
+			name = "emergency-helper";
+			productName = "emergency-helper";
+			productReference = DA8E268F29E4D33800169AE8 /* emergency-helper.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		DA8E269429E4D33800169AE8 /* emergency-helper Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA8E26BB29E4D33A00169AE8 /* Build configuration list for PBXNativeTarget "emergency-helper Watch App" */;
+			buildPhases = (
+				DA8E269129E4D33800169AE8 /* Sources */,
+				DA8E269229E4D33800169AE8 /* Frameworks */,
+				DA8E269329E4D33800169AE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "emergency-helper Watch App";
+			productName = "emergency-helper Watch App";
+			productReference = DA8E269529E4D33800169AE8 /* emergency-helper Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA8E26A629E4D33A00169AE8 /* emergency-helper Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA8E26C229E4D33A00169AE8 /* Build configuration list for PBXNativeTarget "emergency-helper Watch AppTests" */;
+			buildPhases = (
+				DA8E26A329E4D33A00169AE8 /* Sources */,
+				DA8E26A429E4D33A00169AE8 /* Frameworks */,
+				DA8E26A529E4D33A00169AE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA8E26A929E4D33A00169AE8 /* PBXTargetDependency */,
+			);
+			name = "emergency-helper Watch AppTests";
+			productName = "emergency-helper Watch AppTests";
+			productReference = DA8E26A729E4D33A00169AE8 /* emergency-helper Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA8E26B029E4D33A00169AE8 /* emergency-helper Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA8E26C529E4D33A00169AE8 /* Build configuration list for PBXNativeTarget "emergency-helper Watch AppUITests" */;
+			buildPhases = (
+				DA8E26AD29E4D33A00169AE8 /* Sources */,
+				DA8E26AE29E4D33A00169AE8 /* Frameworks */,
+				DA8E26AF29E4D33A00169AE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA8E26B329E4D33A00169AE8 /* PBXTargetDependency */,
+			);
+			name = "emergency-helper Watch AppUITests";
+			productName = "emergency-helper Watch AppUITests";
+			productReference = DA8E26B129E4D33A00169AE8 /* emergency-helper Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA8E268929E4D33800169AE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DA8E268E29E4D33800169AE8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					DA8E269429E4D33800169AE8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					DA8E26A629E4D33A00169AE8 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = DA8E269429E4D33800169AE8;
+					};
+					DA8E26B029E4D33A00169AE8 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = DA8E269429E4D33800169AE8;
+					};
+				};
+			};
+			buildConfigurationList = DA8E268C29E4D33800169AE8 /* Build configuration list for PBXProject "emergency-helper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA8E268829E4D33800169AE8;
+			productRefGroup = DA8E269029E4D33800169AE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA8E268E29E4D33800169AE8 /* emergency-helper */,
+				DA8E269429E4D33800169AE8 /* emergency-helper Watch App */,
+				DA8E26A629E4D33A00169AE8 /* emergency-helper Watch AppTests */,
+				DA8E26B029E4D33A00169AE8 /* emergency-helper Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA8E268D29E4D33800169AE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8E269329E4D33800169AE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8E26A229E4D33A00169AE8 /* Preview Assets.xcassets in Resources */,
+				DA8E269F29E4D33A00169AE8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8E26A529E4D33A00169AE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8E26AF29E4D33A00169AE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA8E269129E4D33800169AE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8E269D29E4D33800169AE8 /* ContentView.swift in Sources */,
+				DA8E269B29E4D33800169AE8 /* emergency_helperApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8E26A329E4D33A00169AE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8E26AC29E4D33A00169AE8 /* emergency_helper_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8E26AD29E4D33A00169AE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8E26B829E4D33A00169AE8 /* emergency_helper_Watch_AppUITestsLaunchTests.swift in Sources */,
+				DA8E26B629E4D33A00169AE8 /* emergency_helper_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA8E269829E4D33800169AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA8E269429E4D33800169AE8 /* emergency-helper Watch App */;
+			targetProxy = DA8E269729E4D33800169AE8 /* PBXContainerItemProxy */;
+		};
+		DA8E26A929E4D33A00169AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA8E269429E4D33800169AE8 /* emergency-helper Watch App */;
+			targetProxy = DA8E26A829E4D33A00169AE8 /* PBXContainerItemProxy */;
+		};
+		DA8E26B329E4D33A00169AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA8E269429E4D33800169AE8 /* emergency-helper Watch App */;
+			targetProxy = DA8E26B229E4D33A00169AE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DA8E26B929E4D33A00169AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA8E26BA29E4D33A00169AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DA8E26BC29E4D33A00169AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"emergency-helper Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "emergency-helper";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "emergency-helper.emergency-helper.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		DA8E26BD29E4D33A00169AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"emergency-helper Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "emergency-helper";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "emergency-helper.emergency-helper.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		DA8E26C029E4D33A00169AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "emergency-helper";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "emergency-helper.emergency-helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DA8E26C129E4D33A00169AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "emergency-helper";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "emergency-helper.emergency-helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA8E26C329E4D33A00169AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "emergency-helper.emergency-helper-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/emergency-helper Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/emergency-helper Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		DA8E26C429E4D33A00169AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "emergency-helper.emergency-helper-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/emergency-helper Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/emergency-helper Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		DA8E26C629E4D33A00169AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "emergency-helper.emergency-helper-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "emergency-helper Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		DA8E26C729E4D33A00169AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "emergency-helper.emergency-helper-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "emergency-helper Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA8E268C29E4D33800169AE8 /* Build configuration list for PBXProject "emergency-helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8E26B929E4D33A00169AE8 /* Debug */,
+				DA8E26BA29E4D33A00169AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA8E26BB29E4D33A00169AE8 /* Build configuration list for PBXNativeTarget "emergency-helper Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8E26BC29E4D33A00169AE8 /* Debug */,
+				DA8E26BD29E4D33A00169AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA8E26BF29E4D33A00169AE8 /* Build configuration list for PBXNativeTarget "emergency-helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8E26C029E4D33A00169AE8 /* Debug */,
+				DA8E26C129E4D33A00169AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA8E26C229E4D33A00169AE8 /* Build configuration list for PBXNativeTarget "emergency-helper Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8E26C329E4D33A00169AE8 /* Debug */,
+				DA8E26C429E4D33A00169AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA8E26C529E4D33A00169AE8 /* Build configuration list for PBXNativeTarget "emergency-helper Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8E26C629E4D33A00169AE8 /* Debug */,
+				DA8E26C729E4D33A00169AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA8E268929E4D33800169AE8 /* Project object */;
+}
