@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Contacts
+import MapKit
 
 struct ContentView: View {
     var body: some View {
@@ -44,8 +46,13 @@ struct BookView: View {
 
 struct EmergencyContactsView: View {
     var body: some View {
-        VStack(alignment: .center) {
-            Text("Placeholder for contacts information")
+        List {
+            Section("Saved Contacts") {
+                
+            }
+            Section("Other Contacts") {
+                
+            }
         }
     }
 }
