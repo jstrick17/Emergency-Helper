@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-//            FirstAidCellView()
             List {
                 NavigationLink(destination: BookView()) {
                     FirstAidCellView()
@@ -29,8 +28,16 @@ struct ContentView: View {
 
 struct BookView: View {
     var body: some View {
-        VStack (alignment: .center) {
-            Text("Placeholder for book information")
+        List {
+            NavigationLink(destination: CutsView()) {
+                CutsCellView()
+            }
+            NavigationLink(destination: PoisoningView()) {
+                PoisoningCellView()
+            }
+            NavigationLink(destination: BrokenBonesView()) {
+                BrokenBonesCellView()
+            }
         }
     }
 }
@@ -89,6 +96,66 @@ struct NearestHospitalCellView: View {
                 Spacer()
                 Image(systemName: "arrow.right")
             }
+        }
+    }
+}
+
+struct CutsCellView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 15) {
+            HStack(alignment: .center) {
+                Image(systemName: "scissors").resizable().aspectRatio(contentMode: .fit).foregroundColor(.red)
+                Spacer()
+                Text("Got a cut?")
+            }
+        }
+    }
+}
+
+struct CutsView: View {
+    var body: some View {
+        VStack(alignment: .center) {
+            Text("Placeholder for Cuts information.")
+        }
+    }
+}
+
+struct PoisoningCellView: View {
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack(alignment: .center) {
+                Image(systemName: "exclamationmark.triangle").resizable().aspectRatio(contentMode: .fit).foregroundColor(.red)
+                Spacer()
+                Text("Eat something bad?")
+            }
+        }
+    }
+}
+
+struct PoisoningView: View {
+    var body: some View {
+        VStack(alignment: .center) {
+            Text("Placeholder for Poisoning information.")
+        }
+    }
+}
+
+struct BrokenBonesCellView: View {
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack(alignment: .center) {
+                Image(systemName: "figure.arms.open").resizable().aspectRatio(contentMode: .fit).foregroundColor(.red)
+                Spacer()
+                Text("Break a bone?")
+            }
+        }
+    }
+}
+
+struct BrokenBonesView: View {
+    var body: some View {
+        VStack(alignment: .center) {
+            Text("Placeholder for Broken Bones information.")
         }
     }
 }
