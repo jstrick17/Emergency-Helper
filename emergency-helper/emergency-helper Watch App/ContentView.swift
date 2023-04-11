@@ -9,12 +9,45 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            FirstAidCellView()
-            EmergencyContactsCellView()
-            NearestHospitalCellView()
+        NavigationView {
+//            FirstAidCellView()
+            List {
+                NavigationLink(destination: BookView()) {
+                    FirstAidCellView()
+                }
+                NavigationLink(destination: EmergencyContactsView()) {
+                    EmergencyContactsCellView()
+                }
+                NavigationLink(destination: NearestHospitalView()) {
+                    NearestHospitalCellView()
+                }
+            }
         }
         .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+    }
+}
+
+struct BookView: View {
+    var body: some View {
+        VStack (alignment: .center) {
+            Text("Placeholder for book information")
+        }
+    }
+}
+
+struct EmergencyContactsView: View {
+    var body: some View {
+        VStack(alignment: .center) {
+            Text("Placeholder for contacts information")
+        }
+    }
+}
+
+struct NearestHospitalView: View {
+    var body: some View {
+        VStack(alignment: .center) {
+            Text("Placeholder for hospital information")
+        }
     }
 }
 
@@ -57,11 +90,5 @@ struct NearestHospitalCellView: View {
                 Image(systemName: "arrow.right")
             }
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
