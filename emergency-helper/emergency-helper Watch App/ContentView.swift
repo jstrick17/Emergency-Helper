@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import Contacts
 import MapKit
+import CoreLocation
 
 struct ContentView: View {
     var body: some View {
@@ -58,10 +58,13 @@ struct EmergencyContactsView: View {
 }
 
 struct NearestHospitalView: View {
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 42.96467, longitude: -85.88889), span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+    
     var body: some View {
-        VStack(alignment: .center) {
-            Text("Placeholder for hospital information")
-        }
+        Map(coordinateRegion: $region, showsUserLocation: true, userTrackingMode: .constant(.follow))
+            .frame(width: 400, height: 300)
+        
+        
     }
 }
 
@@ -164,5 +167,12 @@ struct BrokenBonesView: View {
         VStack(alignment: .center) {
             Text("Placeholder for Broken Bones information.")
         }
+    }
+}
+
+struct MapView: View {
+    var body: some View {
+        Map(coordinateRegion: .constant(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))), interactionModes: [])
+            .frame(width: 400, height: 300)
     }
 }
