@@ -124,10 +124,19 @@ struct CutsCellView: View {
 
 struct CutsView: View {
     var body: some View {
-        VStack(alignment: .center) {
-            Text("Placeholder for Cuts information.")
+            TabView {
+                Text("Step 1: Wash your hands.").fontWeight(Font.Weight.bold)
+                Text("Step 2: Stop the bleeding.").fontWeight(Font.Weight.bold)
+                Text("Step 3: Clean the cut/scrape.").fontWeight(Font.Weight.bold)
+                Text("Step 4: Put antibiotic cream or petroleum jelly on (if available).").fontWeight(Font.Weight.bold)
+                Text("Step 5: Cover the cut/scrape with something clean, if necessary.").fontWeight(Font.Weight.bold)
+                Text("Step 6: If covered, change the covering daily.").fontWeight(Font.Weight.bold)
+                Text("Step 7: If the cut seems infected, seek medical attention as soon as possible.").fontWeight(Font.Weight.bold)
+                // https://www.mayoclinic.org/first-aid/first-aid-cuts/basics/art-20056711
+                Text("All information found from the Mayo Clinic. Thank you!")
+            }
+            .tabViewStyle(PageTabViewStyle())
         }
-    }
 }
 
 struct PoisoningCellView: View {
@@ -145,7 +154,8 @@ struct PoisoningCellView: View {
 struct PoisoningView: View {
     var body: some View {
         VStack(alignment: .center) {
-            Text("Placeholder for Poisoning information.")
+            Text("You must contact emergency services.").fontWeight(Font.Weight.bold)
+            Text("In a production app, this text would be labelled 911 with the ability to call for help.")
         }
     }
 }
@@ -165,7 +175,12 @@ struct BrokenBonesCellView: View {
 struct BrokenBonesView: View {
     var body: some View {
         VStack(alignment: .center) {
-            Text("Placeholder for Broken Bones information.")
+            TabView {
+                Text("Step 1: Keep the bone from moving. Use sticks or many bandages to restrict movement.").fontWeight(Font.Weight.bold)
+                Text("Step 2: IF NEEDED: put the appendage back into its anatomically correct position.").fontWeight(Font.Weight.bold)
+                // https://www.outdoorsgeek.com/suffering-a-fracture-in-the-outdoors/
+                Text("This information was provided by Outdoor Geek. Thank you!")
+            }.tabViewStyle(PageTabViewStyle())
         }
     }
 }
