@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import Contacts
+
+var contacts = Contacts.CNContactStore()
 
 @main
 struct emergency_helper_Watch_AppApp: App {

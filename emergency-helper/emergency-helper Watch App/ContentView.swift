@@ -8,6 +8,8 @@
 import SwiftUI
 import MapKit
 import CoreLocation
+import Contacts
+
 
 struct ContentView: View {
     var body: some View {
@@ -45,10 +47,16 @@ struct BookView: View {
 }
 
 struct EmergencyContactsView: View {
+    func getContacts(){
+        var contacts = CNContactStore()
+        print(contacts)
+    }
     var body: some View {
         List {
             Section("Saved Contacts") {
                 
+            }.onTapGesture {
+                getContacts()
             }
             Section("Other Contacts") {
                 
@@ -58,13 +66,12 @@ struct EmergencyContactsView: View {
 }
 
 struct NearestHospitalView: View {
+    // originates to GVSU's Allendale Campus
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 42.96467, longitude: -85.88889), span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
     
     var body: some View {
         Map(coordinateRegion: $region, showsUserLocation: true, userTrackingMode: .constant(.follow))
             .frame(width: 400, height: 300)
-        
-        
     }
 }
 
