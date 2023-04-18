@@ -49,7 +49,14 @@ struct BookView: View {
 struct EmergencyContactsView: View {
     func getContacts(){
         var contacts = CNContactStore()
-        print(contacts)
+        var allContacts: [CNContact] = []
+        let keysToFetch = [CNContactGivenNameKey, CNContactFamilyNameKey] as! [any CNKeyDescriptor]
+        do {
+            try allContacts = contacts.unifiedContacts(matching: NSPredicate(value: true), keysToFetch: keysToFetch)
+        } catch {
+            print("error")
+        }
+        print(allContacts)
     }
     var body: some View {
         List {
