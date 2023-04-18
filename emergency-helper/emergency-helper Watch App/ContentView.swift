@@ -61,19 +61,28 @@ struct EmergencyContactsView: View {
     var allContacts : [CNContact] {
         return getContacts()
     }
+    
+    @State var showsAlert = false
+    @State var saveContact:String = ""
+    
     var body: some View {
         List {
             Section("Saved Contacts") {
                 
             }
             Section("Other Contacts") {
-                    ForEach(allContacts.indices, id: \.self) {
-                        let int = $0
-                        Text("\(allContacts[$0].givenName) \(allContacts[$0].familyName)").onTapGesture {
-                            print("\(allContacts[int].givenName)")
-                        }
+                ForEach(allContacts.indices, id: \.self) {
+                    let int = $0
+                    Text("\(allContacts[$0].givenName) \(allContacts[$0].familyName)").onTapGesture {
+                        print("\(allContacts[int].givenName)")
+                        self.showsAlert = true
+                        self.saveContact = "\(allContacts[int].givenName) \(allContacts[int].familyName)"
                     }
+                }
             }
+        }.alert("Add \(saveContact) to Saved Contacts?", isPresented: $showsAlert) {
+            //TODO: actually add these to a SavedContacts file
+            Button("OK", role: .cancel) { }
         }
     }
 }
