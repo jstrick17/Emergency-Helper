@@ -47,7 +47,6 @@ struct BookView: View {
 }
 
 struct EmergencyContactsView: View {
-    //@State var allContacts: [CNContact]
     func getContacts() -> [CNContact]{
         let contacts = CNContactStore()
         var allContacts: [CNContact] = []
@@ -68,13 +67,13 @@ struct EmergencyContactsView: View {
                 
             }
             Section("Other Contacts") {
-                List{
-                    ForEach(allContacts, id: \.self) {
-                        Text("\($0.givenName) \($0.familyName)")
+                    ForEach(allContacts.indices, id: \.self) {
+                        let int = $0
+                        Text("\(allContacts[$0].givenName) \(allContacts[$0].familyName)").onTapGesture {
+                            print("\(allContacts[int].givenName)")
                         }
-                }
+                    }
             }
-            
         }
     }
 }
