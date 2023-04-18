@@ -63,7 +63,8 @@ struct EmergencyContactsView: View {
     }
     
     @State var showsAlert = false
-    @State var saveContact:String = ""
+    @State var saveContactLabel:String = ""
+    @State var saveContactToWrite:String = ""
     
     var body: some View {
         List {
@@ -76,13 +77,15 @@ struct EmergencyContactsView: View {
                     Text("\(allContacts[$0].givenName) \(allContacts[$0].familyName)").onTapGesture {
                         print("\(allContacts[int].givenName)")
                         self.showsAlert = true
-                        self.saveContact = "\(allContacts[int].givenName) \(allContacts[int].familyName)"
+                        self.saveContactLabel = "\(allContacts[int].givenName) \(allContacts[int].familyName)"
                     }
                 }
             }
-        }.alert("Add \(saveContact) to Saved Contacts?", isPresented: $showsAlert) {
+        }.alert("Add \(saveContactLabel) to Saved Contacts?", isPresented: $showsAlert) {
             //TODO: actually add these to a SavedContacts file
-            Button("OK", role: .cancel) { }
+            Button("OK", role: .cancel) {
+                print("great job")
+            }
         }
     }
 }
