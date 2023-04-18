@@ -47,27 +47,34 @@ struct BookView: View {
 }
 
 struct EmergencyContactsView: View {
-    func getContacts(){
-        var contacts = CNContactStore()
+    //@State var allContacts: [CNContact]
+    func getContacts() -> [CNContact]{
+        let contacts = CNContactStore()
         var allContacts: [CNContact] = []
-        let keysToFetch = [CNContactGivenNameKey, CNContactFamilyNameKey] as! [any CNKeyDescriptor]
+        let keysToFetch = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey] as! [any CNKeyDescriptor]
         do {
             try allContacts = contacts.unifiedContacts(matching: NSPredicate(value: true), keysToFetch: keysToFetch)
         } catch {
             print("error")
         }
-        print(allContacts)
+        return allContacts
+    }
+    var allContacts : [CNContact] {
+        return getContacts()
     }
     var body: some View {
         List {
             Section("Saved Contacts") {
                 
-            }.onTapGesture {
-                getContacts()
             }
             Section("Other Contacts") {
-                
+                List{
+                    ForEach(allContacts, id: \.self) {
+                        Text("\($0.givenName) \($0.familyName)")
+                        }
+                }
             }
+            
         }
     }
 }
