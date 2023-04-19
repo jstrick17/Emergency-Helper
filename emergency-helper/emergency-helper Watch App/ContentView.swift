@@ -78,6 +78,8 @@ struct EmergencyContactsView: View {
                         print("\(allContacts[int].givenName)")
                         self.showsAlert = true
                         self.saveContactLabel = "\(allContacts[int].givenName) \(allContacts[int].familyName)"
+                        self.saveContactToWrite = "\(allContacts[int].givenName) \(allContacts[int].familyName) \(allContacts[int].phoneNumbers[0])"
+                        print(saveContactToWrite)
                     }
                 }
             }
